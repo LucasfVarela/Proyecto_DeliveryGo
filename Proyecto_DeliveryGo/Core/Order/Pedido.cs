@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proyecto_DeliveryGo.Core.Order
+{
+    public class Pedido
+    {
+       public int Id { get; set; }
+       public List<Item> Items { get; set; }
+       public string Direccion { get; set; }
+       public string TipoPago { get; set; }
+       public EstadoPedido Estado { get; set; }
+       public decimal Monto { get; set; }
+    }
+    public class EstadoPedido
+    {
+    }
+
+    public class Item
+    {
+    }
+}
