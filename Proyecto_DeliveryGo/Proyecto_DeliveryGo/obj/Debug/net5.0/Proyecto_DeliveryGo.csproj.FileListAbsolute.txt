@@ -1,0 +1,16 @@
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.AssemblyInfo.cs
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.sourcelink.json
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\bin\Debug\net5.0\Proyecto_DeliveryGo.exe
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\bin\Debug\net5.0\Proyecto_DeliveryGo.deps.json
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\bin\Debug\net5.0\Proyecto_DeliveryGo.runtimeconfig.json
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\bin\Debug\net5.0\Proyecto_DeliveryGo.runtimeconfig.dev.json
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\bin\Debug\net5.0\Proyecto_DeliveryGo.dll
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\bin\Debug\net5.0\Proyecto_DeliveryGo.pdb
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.dll
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\refint\Proyecto_DeliveryGo.dll
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.pdb
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\Proyecto_DeliveryGo.genruntimeconfig.cache
+C:\Users\user\Source\Repos\Proyecto_DeliveryGo\Proyecto_DeliveryGo\obj\Debug\net5.0\ref\Proyecto_DeliveryGo.dll

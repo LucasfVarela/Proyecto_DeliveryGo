@@ -1,0 +1,30 @@
+﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proyecto_DeliveryGo.Core.Command
+{
+    public class CarritoPort : ICarritoPort
+    {
+        private Carrito _carrito;
+        private CarritoInvoker _editor;
+        public decimal SubTotal() => _carrito.Subtotal();
+        public void Run(ICommand command)
+        {
+            _editor.Run(command);
+        }
+
+        public void Undo()
+        {
+            _editor.Undo();
+        }
+
+        public void Redo()
+        {
+            _editor.Redo();
+        }
+    }
+}
