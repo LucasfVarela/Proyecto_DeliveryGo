@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Proyecto_DeliveryGo.Core.Strategy
 {
-    public class EnvioMoto : IEnvioStrategy
+    public class RetiroEnTienda : IEnvioStrategy
     {
-        public string Nombre => "Moto";
+        public string Nombre => "Retiro";
 
         public decimal Calcular(decimal subtotal)
         {
-            return 1200m;
-
+            return 0m;
         }
     }
 }
