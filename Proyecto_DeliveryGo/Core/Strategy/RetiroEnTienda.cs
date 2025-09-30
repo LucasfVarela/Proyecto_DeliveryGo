@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Proyecto_DeliveryGo.Core.Strategy
 {
-    internal class RetiroEnTienda
+    public class RetiroEnTienda : IEnvioStrategy
     {
+        public string Nombre => "Retiro";
+
+        public decimal Calcular(decimal subtotal)
+        {
+            return 0m;
+        }
     }
 }
