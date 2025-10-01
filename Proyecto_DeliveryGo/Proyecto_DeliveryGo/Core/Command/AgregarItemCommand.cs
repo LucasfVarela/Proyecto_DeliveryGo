@@ -10,6 +10,12 @@ namespace Proyecto_DeliveryGo.Core.Command
     {
         private readonly Carrito c;
         private readonly Item i;
+
+        public AgregarItemCommand(Carrito carrito, Item item)
+        {
+            c = carrito;
+            i = item;
+        }
         public void Execute() => c.Agregar(i);
         public void Undo() => c.Quitar(i.Sku);
     }

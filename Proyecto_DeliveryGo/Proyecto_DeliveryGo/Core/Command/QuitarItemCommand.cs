@@ -11,6 +11,14 @@ namespace Proyecto_DeliveryGo.Core.Command
         private readonly Carrito c;
         private readonly string _sku;
         private Item? _backup = null;
+
+
+        public QuitarItemCommand(Carrito c, string sku)
+        {
+            this.c = c;
+            _sku = sku;
+        }
+
         public void Execute()
         {
             _backup = c.Quitar(_sku);

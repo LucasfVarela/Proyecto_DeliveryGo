@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_DeliveryGo.Core.Command
 {
-    public class CarritoInvoker
+    public class EditorCarrito
     {
         private readonly Stack<ICommand> _undo = new();
         private readonly Stack<ICommand> _redo = new();
