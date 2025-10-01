@@ -10,17 +10,26 @@ namespace Proyecto_DeliveryGo.Core.Command
     public class SetCantidadCommand : ICommand
     {
         private readonly Carrito c;
-        private readonly string _sku;
-        private readonly int _nueva;
+        private readonly string sku;
+        private readonly int nueva;
         private int _anterior = 0;
+
+
+
+        public SetCantidadCommand(Carrito carrito, string sku, int nueva)
+        {
+            c = carrito;
+            this.sku = sku;
+            this.nueva = nueva;
+        }
         public void Execute()
         {
-            _anterior = c.GetCantidad(_sku);
-            c.SetCantidad(_sku, _nueva);
+            _anterior = c.GetCantidad(sku);
+            c.SetCantidad(sku, nueva);
         }
         public void Undo()
         {
-            c.SetCantidad(_sku, _anterior);
+            c.SetCantidad(sku, _anterior);
         }
     }
 }

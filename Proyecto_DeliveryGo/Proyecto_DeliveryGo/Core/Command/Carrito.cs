@@ -27,8 +27,14 @@ namespace Proyecto_DeliveryGo.Core.Command
         }
         public Item? Quitar(string sku)
         {
-            if (_items.Remove(sku, out var eliminado))
-                return eliminado;
+            if (_items.TryGetValue(sku, out var item)){
+
+                _items.Remove(sku);
+
+                return new Item(item.Sku, item.Nombre, item.Precio, item.Cantidad);
+            }
+
+
             return null;
         }
 
