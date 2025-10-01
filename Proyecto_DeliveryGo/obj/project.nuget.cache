@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gfTwBX5rh1wq/bueRg+9bkmpbejN+E+5a0euvRYxTR8TUWJSgv2lgZAqVdkspFiwlr1WDoVkwBF+/5RAg00Yow==",
+  "dgSpecHash": "9G3HIkCo/1A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\idra12\\Desktop\\Proyecto_DeliveryGo-et3-Pago\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/mnt/disco/proyects/proyectos343434/Proyecto_DeliveryGo/Proyecto_DeliveryGo/Proyecto_DeliveryGo.csproj",
+  "expectedPackageFiles": [
+    "/home/lautisape/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
