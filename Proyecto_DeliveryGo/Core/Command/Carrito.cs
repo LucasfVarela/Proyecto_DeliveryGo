@@ -47,6 +47,8 @@ namespace Proyecto_DeliveryGo.Core.Command
             }
             return false;
         }
+        
+
         public decimal Subtotal() =>
         _items.Values.Sum(i => i.Precio * i.Cantidad);
     }

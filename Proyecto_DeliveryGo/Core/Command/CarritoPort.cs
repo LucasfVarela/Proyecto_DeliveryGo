@@ -32,5 +32,6 @@ namespace Proyecto_DeliveryGo.Core.Command
         {
             _editor.Redo();
         }
+
     }
 }

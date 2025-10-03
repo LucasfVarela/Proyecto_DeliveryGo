@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto_DeliveryGo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8377e78df4f3c5f6e6d68380395fbce3ffc539a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9836912c815ae798f8ea6852607d246fb744aa18")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto_DeliveryGo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto_DeliveryGo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

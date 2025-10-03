@@ -13,5 +13,7 @@ namespace Proyecto_DeliveryGo.Core.Command
         void Run(ICommand command);
         void Undo();
         void Redo();
+        
+
     }
 }
