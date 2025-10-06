@@ -15,15 +15,17 @@ namespace Proyecto_DeliveryGo.Core.Order
             _pedido.Items = new List<Item>();
         }
 
-        public IPedidoBuilder ConItems(IEnumerable<(string sku, string nombre, decimal precio, int cantidad)> items)
+
+        public IPedidoBuilder AddItems(IEnumerable<Item> items)
         {
             foreach (var i in items)
             {
-                var item = new Item(i.sku, i.nombre, i.precio, i.cantidad);
-                _pedido.Items.Add(item);
+                _pedido.Items.Add(i);
             }
             return this;
         }
+
+
 
         public IPedidoBuilder ConDireccion(string direccion)
         {
@@ -58,6 +60,8 @@ namespace Proyecto_DeliveryGo.Core.Order
             var resultado = _pedido;
             _pedido = new Pedido();
             _pedido.Items = new List<Item>();
+
+
             
             return resultado;
         }

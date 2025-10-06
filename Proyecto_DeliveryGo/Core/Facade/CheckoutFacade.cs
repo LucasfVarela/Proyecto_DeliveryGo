@@ -102,11 +102,12 @@ namespace Proyecto_DeliveryGo.Core.Facade
        
         public Pedido ConfirmarPedido(string direccion, string tipoPago)
         {
-            var items = new List<(string sku, string nombre, decimal precio, int cantidad)>();
-
+            // var items = new List<(string sku, string nombre, decimal precio, int cantidad)>();
+            var items = Carrito.Instancia.ObtenerItems();
             var builder = new PedidoBuilder();
             var pedido = builder
-                .ConItems(items)
+                //.ConItems(items)
+                .AddItems(items)
                 .ConDireccion(direccion)
                 //.ConMetodoPago(tipoPago)
                 .ConMonto(CalcularTotal())
@@ -118,6 +119,10 @@ namespace Proyecto_DeliveryGo.Core.Facade
             _pedidos.CambiarEstado(pedido.Id, EstadoPedido.Entregado);
 
             return pedido;
+
+
+
+       
         }
     }
 }
