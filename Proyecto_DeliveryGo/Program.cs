@@ -157,6 +157,7 @@ namespace DeliveryGo
 
         static void CambiarCantidad()
         {
+            VerCarrito();
             Console.WriteLine("╔═══════════════════════════════════════════╗");
             Console.WriteLine("║            CAMBIAR CANTIDAD               ║");
             Console.WriteLine("╚═══════════════════════════════════════════╝");
@@ -173,6 +174,8 @@ namespace DeliveryGo
 
         static void QuitarItem()
         {
+
+            VerCarrito();
             Console.WriteLine("╔═══════════════════════════════════════════╗");
             Console.WriteLine("║         QUITAR ÍTEM DEL CARRITO           ║");
             Console.WriteLine("╚═══════════════════════════════════════════╝");
