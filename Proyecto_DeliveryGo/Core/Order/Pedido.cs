@@ -10,7 +10,7 @@ namespace Proyecto_DeliveryGo.Core.Order
     public class Pedido
     {
        public int Id { get; set; }
-       public List<Item> Items { get; set; } 
+       public List<Item> Items { get; set; } = new ();
        public string Direccion { get; set; }
        public string TipoPago { get; set; }
        public EstadoPedido Estado { get; set; }
