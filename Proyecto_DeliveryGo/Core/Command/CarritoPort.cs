@@ -9,15 +9,15 @@ namespace Proyecto_DeliveryGo.Core.Command
 {
     public class CarritoPort : ICarritoPort
     {
-        private Carrito _carrito= new();
+        //private Carrito _carrito= new();
         private EditorCarrito _editor = new();
 
         public CarritoPort()
         {
-            _carrito = new Carrito();
+            //_carrito = new Carrito();
             _editor = new EditorCarrito();
         }
-        public decimal SubTotal() => _carrito.Subtotal();
+        public decimal SubTotal() => Carrito.Instancia.Subtotal();
         public void Run(ICommand command)
         {
             _editor.Run(command);

@@ -8,24 +8,31 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/home/lautisape/.nuget/packages/": {}
+    "C:\\Users\\lucas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/disco/proyects/proyectos343434/Proyecto_DeliveryGo/Proyecto_DeliveryGo/Proyecto_DeliveryGo.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\Documents\\IDRA\\PROGRAMACION\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo.csproj",
       "projectName": "Proyecto_DeliveryGo",
-      "projectPath": "/mnt/disco/proyects/proyectos343434/Proyecto_DeliveryGo/Proyecto_DeliveryGo/Proyecto_DeliveryGo.csproj",
-      "packagesPath": "/home/lautisape/.nuget/packages/",
-      "outputPath": "/mnt/disco/proyects/proyectos343434/Proyecto_DeliveryGo/Proyecto_DeliveryGo/obj/",
+      "projectPath": "C:\\Users\\lucas\\Documents\\IDRA\\PROGRAMACION\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo.csproj",
+      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas\\Documents\\IDRA\\PROGRAMACION\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo\\Proyecto_DeliveryGo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/lautisape/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,18 +67,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

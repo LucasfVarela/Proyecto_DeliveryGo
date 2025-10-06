@@ -8,6 +8,10 @@ namespace Proyecto_DeliveryGo.Core.Command
 {
     public class Item
     {
+        public string Nombre { get; init; } = "";
+        public string Sku { get; init; } = "";
+        public decimal Precio { get; init; }
+        public int Cantidad { get; set; }
         public Item(string sku, string nombre, decimal precio, int cantidad)
         {
             Nombre=nombre;
@@ -20,10 +24,6 @@ namespace Proyecto_DeliveryGo.Core.Command
         {
 
         }
-        public string Nombre { get; init; } = "";
-        public string Sku { get; init; } = "";
-        public decimal Precio { get; init; }
-        public int Cantidad { get; set; }
     }
 }
   

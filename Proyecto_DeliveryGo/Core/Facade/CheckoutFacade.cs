@@ -6,20 +6,28 @@ using Proyecto_DeliveryGo.Core.Strategy;
 using Proyecto_DeliveryGo.Core.Order;
 using Proyecto_DeliveryGo.Core.Payment;
 using Item = Proyecto_DeliveryGo.Core.Command.Item;
+using System.Runtime.Intrinsics.Arm;
 
 namespace Proyecto_DeliveryGo.Core.Facade
 {
     public class CheckoutFacade
     {
         private readonly ICarritoPort _carrito;
-        private readonly Carrito _carritoInterno;
+       // private readonly Carrito;
         private IEnvioStrategy _envioActual;
         private readonly PedidoService _pedidos;
 
-        public CheckoutFacade(ICarritoPort carrito, Carrito carritoInterno, IEnvioStrategy envioInicial, PedidoService pedidos)
+        //public CheckoutFacade(ICarritoPort carrito, Carrito carritoInterno, IEnvioStrategy envioInicial, PedidoService pedidos)
+        //{
+        //    _carrito = carrito;
+        //    _carritoInterno = carritoInterno;
+        //    _envioActual = envioInicial;
+        //    _pedidos = pedidos;
+        //}
+
+        public CheckoutFacade(ICarritoPort carrito,  IEnvioStrategy envioInicial, PedidoService pedidos)
         {
             _carrito = carrito;
-            _carritoInterno = carritoInterno;
             _envioActual = envioInicial;
             _pedidos = pedidos;
         }
@@ -27,19 +35,23 @@ namespace Proyecto_DeliveryGo.Core.Facade
         public void AgregarItem(string sku, string nombre, decimal precio, int cantidad)
         {
             var item = new Item(sku, nombre, precio, cantidad);
-            var comando = new AgregarItemCommand(_carritoInterno, item);
+            var comando = new AgregarItemCommand(Carrito.Instancia, item);
             _carrito.Run(comando);
         }
 
+
+
+     
+
         public void CambiarCantidad(string sku, int cantidad)
         {
-            var comando = new SetCantidadCommand(_carritoInterno, sku, cantidad);
+            var comando = new SetCantidadCommand(Carrito.Instancia, sku, cantidad);
             _carrito.Run(comando);
         }
 
         public void QuitarItem(string sku)
         {
-            var comando = new QuitarItemCommand(_carritoInterno, sku);
+            var comando = new QuitarItemCommand(Carrito.Instancia, sku);
             _carrito.Run(comando);
         }
 
@@ -53,6 +65,12 @@ namespace Proyecto_DeliveryGo.Core.Facade
             var subtotal = _carrito.SubTotal();
             var costoEnvio = _envioActual.Calcular(subtotal);
             return subtotal + costoEnvio;
+        }
+
+        public decimal SubTotal()
+        {
+         
+            return _carrito.SubTotal();
         }
 
         public bool Pagar(string tipoPago, bool aplicarIVA, decimal? cupon = null)
@@ -81,7 +99,7 @@ namespace Proyecto_DeliveryGo.Core.Facade
             var monto = CalcularTotal();
             return pago.Procesar(monto);
         }
-
+       
         public Pedido ConfirmarPedido(string direccion, string tipoPago)
         {
             var items = new List<(string sku, string nombre, decimal precio, int cantidad)>();

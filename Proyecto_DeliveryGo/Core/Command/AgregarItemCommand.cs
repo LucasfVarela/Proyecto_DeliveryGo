@@ -8,15 +8,15 @@ namespace Proyecto_DeliveryGo.Core.Command
 {
     public class AgregarItemCommand : ICommand
     {
-        private readonly Carrito c;
-        private readonly Item i;
+        private readonly Carrito _carrito;
+        private readonly Item _Item;
 
         public AgregarItemCommand(Carrito carrito, Item item)
         {
-            c = carrito;
-            i = item;
+            _carrito = carrito;
+            _Item = item;
         }
-        public void Execute() => c.Agregar(i);
-        public void Undo() => c.Quitar(i.Sku);
+        public void Execute() => _carrito.Agregar(_Item); //.Agregar(i);
+        public void Undo() => _carrito.Quitar(_Item.Sku);
     }
 }

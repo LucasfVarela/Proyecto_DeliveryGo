@@ -32,6 +32,7 @@ namespace Proyecto_DeliveryGo.Core.Singleton
         }
 
         public decimal EnvioGratisDesde { get; set; }
+        public decimal IVA { get; set; }
     }
 }
 
